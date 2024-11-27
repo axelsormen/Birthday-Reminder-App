@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="sms_service_enabled"
+        android:title="Enable SMS Service"
+        android:summary="Turn on/off SMS service for sending messages"
+        android:defaultValue="false" />
+
+    <com.example.mappeinnlevering2s374926.TimePreference
+        android:key="sms_send_time"
+        android:title="Send Time"
+        android:summary="Select time to send SMS"
+        android:defaultValue="08:00" />
+
+    <EditTextPreference
+        android:key="sms_default_message"
+        android:title="Default SMS Message"
+        android:summary="Set the default message to be sent in the SMS"
+        android:defaultValue="Gratulerer så mye med dagen!" />
+
+</PreferenceScreen>

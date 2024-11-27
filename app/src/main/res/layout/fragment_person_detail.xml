@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/editDeleteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rediger eller slett venn"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Navn"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefonnummer"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:inputType="phone"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <DatePicker
+        android:id="@+id/birthdatePickerDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="true"
+        android:spinnersShown="false"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/updatePersonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oppdater"
+        android:onClick="updatePerson"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/deletePersonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slett"
+        android:onClick="deletePerson"
+        android:textSize="18sp"
+        android:backgroundTint="@color/red_500"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tilbake"
+        android:onClick="goBack"
+        android:textSize="18sp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@android:color/white" />
+</LinearLayout>
